@@ -21,7 +21,7 @@ app.use(middleware.logger);
 
 //route level middleware
 app.get('/about',middleware.requireAuthentication,function (req,res) {
-	res.send('About Us');
+	res.send('About Us in Using git');
 });
 
 app.use(express.static(__dirname + '/public'));
